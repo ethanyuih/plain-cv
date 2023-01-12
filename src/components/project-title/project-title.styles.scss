@@ -1,0 +1,30 @@
+.project-title-container {
+  display: flex;
+  justify-content: space-between;
+
+  .projects-info:nth-child(2) {
+    margin-top: 40px;
+  }
+
+  .projects-info {
+    display: flex;
+    gap: 5px;
+
+    .icon-button {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      // background-color: #ddd;
+      padding: 2px 5px;
+      border-radius: 40px;
+      margin-top: -1px;
+      border: 1px solid #aaa;
+
+      .icon {}
+
+      span {
+        font-size: 10px;
+      }
+    }
+  }
+}
