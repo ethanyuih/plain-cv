@@ -1,13 +1,13 @@
-import { FC } from 'react';
-import { AiFillPhone, AiFillLinkedin, AiFillGithub } from 'react-icons/ai';
-import { MdEmail } from 'react-icons/md';
-import styled from 'styled-components';
+import { FC } from 'react'
+import { AiFillPhone, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { MdEmail } from 'react-icons/md'
+import styled from 'styled-components'
 
-import type { Profile } from '../assets/resume-infos/types';
+import type { Profile } from '../assets/resume-infos/types'
 
 type Props = {
-  profile: Profile;
-};
+  profile: Profile
+}
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -18,7 +18,7 @@ const ProfileContainer = styled.div`
   h1 {
     font-size: 26px;
   }
-`;
+`
 
 const ContactInfo = styled.div`
   display: flex;
@@ -42,10 +42,10 @@ const ContactInfo = styled.div`
       border-bottom: solid gray 1px;
     }
   }
-`;
+`
 
 const ProfileFC: FC<Props> = ({ profile }) => {
-  const { name, phone, email, linkedin, github, address } = profile;
+  const { name, phone, email, linkedin, github, address } = profile
 
   return (
     <ProfileContainer>
@@ -72,7 +72,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
         </a>
       </ContactInfo>
     </ProfileContainer>
-  );
-};
+  )
+}
 
-export default ProfileFC;
+export default ProfileFC
