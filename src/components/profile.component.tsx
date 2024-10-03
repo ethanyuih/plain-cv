@@ -50,7 +50,8 @@ const ProfileFC: FC<Props> = ({ profile }) => {
   return (
     <ProfileContainer>
       <h1>{name}</h1>
-      <p>{address}</p>
+      {/* if address is not empty, show*/ address !== '' && <p>{address}</p>}
+      {/*<p>{address}</p>*/}
       <ContactInfo>
         <a href={`tel:${phone}`}>
           <AiFillPhone className='profile-icon' />

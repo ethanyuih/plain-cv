@@ -1,4 +1,4 @@
-import { Profile } from './types';
+import { Profile } from './types'
 
 export const profileInfo: Profile = {
   name: 'Yixuan Yu',
@@ -6,5 +6,6 @@ export const profileInfo: Profile = {
   email: 'easianyu@gmail.com',
   linkedin: 'https://www.linkedin.com/in/easianyu',
   github: 'https://github.com/easianyu',
-  address: '2800 Caroline Way, Arcadia, CA, 91007',
-};
+  // address: '153 S Muscatel Ave, San Gabriel, CA, 91776',
+  address: 'Los Angeles, CA',
+}
