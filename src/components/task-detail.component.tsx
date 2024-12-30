@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import styled from 'styled-components';
+import { FC } from "react";
+import styled from "styled-components";
 
-import pageConfig from '../assets/resume-infos/0-page-setting';
-import PlainText from './plaintext.component';
+import pageConfig from "../assets/resume-infos/0-page-setting";
+import PlainText from "./plaintext.component";
 
 type Props = {
   task: string;
@@ -25,7 +25,7 @@ const ParaDot = styled.div`
 
 const TextDetails = styled.div`
   flex: 35;
-  text-align: justify;
+  //text-align: justify;
 `;
 
 const TaskDetailContainer = styled.div`

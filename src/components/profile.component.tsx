@@ -1,13 +1,13 @@
-import { FC } from 'react'
-import { AiFillPhone, AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
-import { MdEmail } from 'react-icons/md'
-import styled from 'styled-components'
+import { FC } from "react";
+import { AiFillPhone, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import styled from "styled-components";
 
-import type { Profile } from '../assets/resume-infos/types'
+import type { Profile } from "../assets/resume-infos/types";
 
 type Props = {
-  profile: Profile
-}
+  profile: Profile;
+};
 
 const ProfileContainer = styled.div`
   display: flex;
@@ -18,12 +18,12 @@ const ProfileContainer = styled.div`
   h1 {
     font-size: 26px;
   }
-`
+`;
 
 const ContactInfo = styled.div`
   display: flex;
   font-size: small;
-  gap: 20px;
+  gap: 10px;
   margin-top: 4px;
 
   a {
@@ -31,6 +31,7 @@ const ContactInfo = styled.div`
     align-items: center;
     gap: 5px;
     color: black;
+    font-weight: semibold;
 
     .profile-icon {
       color: black;
@@ -42,38 +43,39 @@ const ContactInfo = styled.div`
       border-bottom: solid gray 1px;
     }
   }
-`
+`;
 
 const ProfileFC: FC<Props> = ({ profile }) => {
-  const { name, phone, email, linkedin, github, address } = profile
+  const { name, phone, email, linkedin, github, address } = profile;
 
   return (
     <ProfileContainer>
       <h1>{name}</h1>
-      {/* if address is not empty, show*/ address !== '' && <p>{address}</p>}
+      {/* if address is not empty, show*/ address !== "" && <p>{address}</p>}
       {/*<p>{address}</p>*/}
       <ContactInfo>
         <a href={`tel:${phone}`}>
-          <AiFillPhone className='profile-icon' />
+          {/*<AiFillPhone className='profile-icon' />*/}
           <span>{phone}</span>
         </a>
+        <span>|</span>
         <a href={`mailto:${email}`}>
-          <MdEmail className='profile-icon' />
+          {/*<MdEmail className='profile-icon' />*/}
           <span>{email}</span>
         </a>
-
+        <span>|</span>
         <a href={linkedin}>
-          <AiFillLinkedin className='profile-icon' />
-          <span>{linkedin.substring(linkedin.indexOf('linkedin'))}</span>
+          {/*<AiFillLinkedin className='profile-icon' />*/}
+          <span>{linkedin.substring(linkedin.indexOf("linkedin"))}</span>
         </a>
-
+        <span>|</span>
         <a href={github}>
-          <AiFillGithub className='profile-icon' />
-          <span>{github.substring(github.indexOf('github'))}</span>
+          {/*<AiFillGithub className='profile-icon' />*/}
+          <span>{github.substring(github.indexOf("github"))}</span>
         </a>
       </ContactInfo>
     </ProfileContainer>
-  )
-}
+  );
+};
 
-export default ProfileFC
+export default ProfileFC;
