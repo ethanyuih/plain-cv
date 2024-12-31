@@ -3,7 +3,7 @@ Yu
 6263902933
 ethanyyou@gmail.com
 
-University of Southern California
+202
 Computer Science
 August 2021 - May 2023
 
@@ -14,38 +14,59 @@ Bacera Co. Pty Ltd
 06/2023 - Present
 Software Engineer
 1. Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.
-
 2. Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.
-
 3. Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.
-
 4. Implemented Hangfire for background task processing, achieving 60% reduction in server load.
-
 5. Decomposed the monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.
-
 6. Built a central API Gateway, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.
-
 7. Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.
-
 8. Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging.
 
 Software Engineer Intern
+01/2023 - 06/2023
 1. Developed real-time trade monitoring system with .NET Core, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.
-
 2. Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.
-
 3. Participated in developing a CRM frontend application using Vue 3 with TypeScript.
-
 4. Utilized vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.
-
 5. Implemented responsive layouts with rem/flexbox and Sass, enabling white-label customization for third-party sales.
 
 
 Meituan
+Beijing, China
 06/2022 - 09/2022
 Software Engineer Intern
 1. Optimized x265 image encoding performance using C++ and SIMD instructions (SSE/AVX, NEON), implementing JavaScript APIs for data packing, resulting in 60% faster encoding speeds.
-
 2. Designed and implemented image conversion pipeline using x265 and libheif, reducing encoding time by 36% and achieving 22% better compression compared to WebP format.
-
 3. Applied optimized image format into Meituan App using React Native.
+
+C#
+Go
+SQL
+TypeScript
+JavaScript
+HTML
+CSS
+C++
+Python
+Java
+.NET Core
+EF Core
+Hangfire
+RESTful API
+gRPC
+Gorm
+Gin
+Vue
+React
+Unity
+PostgreSQL
+Nginx
+Jenkins
+Redis
+Docker
+K8s
+Kafka
+RabbitMQ
+AWS SQS
+AWS S3
+AWS Cloud Watch
