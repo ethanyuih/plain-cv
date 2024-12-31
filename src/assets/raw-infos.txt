@@ -17,18 +17,20 @@ Software Engineer
 
 2. Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.
 
-3. Decomposed the monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.
+3. Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.
 
-4. Built a central API Gateway, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.
+4. Implemented Hangfire for background task processing, achieving 60% reduction in server load.
 
-5. Built custom authentication service using Go-OAuth2 and JWT tokens, implementing role-based access control (RBAC) with middleware for secure inter-service authorization.
+5. Decomposed the monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.
 
-6. Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.
+6. Built a central API Gateway, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.
 
-7. Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging.
+7. Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.
+
+8. Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging.
 
 Software Engineer Intern
-1. Developed real-time trade monitoring system with Go + Gorm, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.
+1. Developed real-time trade monitoring system with .NET Core, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.
 
 2. Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.
 
