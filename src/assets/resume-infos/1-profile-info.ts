@@ -7,5 +7,5 @@ export const profileInfo: Profile = {
   linkedin: "linkedin.com/in/ethanyyou",
   github: "github.com/ethanyyou",
   // address: '153 S Muscatel Ave, San Gabriel, CA, 91776',
-  address: "Los Angeles Metropolitan Area",
+  address: "Los Angeles, California (Willing to relocate)",
 };

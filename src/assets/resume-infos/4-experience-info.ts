@@ -12,11 +12,11 @@ export const experienceInfo: Experiences = {
           position: "Software Engineer",
           duration: "June 2023 - Present",
           taskList: [
-            "Architected and implemented new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
+            "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
             "Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.",
             "Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.",
             "Implemented Hangfire for background task processing, achieving 60% reduction in server load.",
-            "Initiated and implemented decomposing the monolithic application into 8+ microservices on Kubernetes, reducing deployment time from 40 to 12 minutes.",
+            "Decomposed the monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
             "Built a central API Gateway, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.",
             "Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
             // "Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging, integrated with Slack for real-time error notifications, resulting in 95% faster incident response time.",
