@@ -47,7 +47,7 @@ export const experienceInfo: Experiences = {
         {
           hidden: false,
           position: "Software Development Engineer Intern",
-          duration: "June. 2022 - Sept. 2022",
+          duration: "June 2022 - September 2022",
           taskList: [
             "Optimized x265 image encoding performance using C++ and SIMD instructions (SSE/AVX, NEON), implementing JavaScript APIs for data packing, resulting in 60% faster encoding speeds.",
             "Designed and implemented  image conversion pipeline using x265 and libheif, reducing encoding time by 36% and achieving 22% better compression compared to WebP format.",
@@ -64,7 +64,7 @@ export const experienceInfo: Experiences = {
         {
           hidden: false,
           position: "Research Assistant",
-          duration: "Sep. 2019 - Jun. 2021",
+          duration: "September 2019 - June 2021",
           taskList: [
             "Modeling for Degradation of Biomedical Polymer: Designed the phase image feature recognition algorithm to recognize the phase image features, and characteristic “island” structures. Implemented the chain scission model by Monte Carlo (MC) method. Designed the Boundary Extension Algorithm (NNBE) to identify features with hole (block) and crack (strip) shapes and utilized these features to establish strength models for different phases.  Published two publications for this research",
           ],

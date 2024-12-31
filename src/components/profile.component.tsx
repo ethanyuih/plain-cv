@@ -1,9 +1,9 @@
-import { FC } from 'react';
-// import { AiFillPhone, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-// import { MdEmail } from "react-icons/md";
-import styled from 'styled-components';
+import { FC } from "react";
+import { AiFillPhone, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
+import styled from "styled-components";
 
-import type { Profile } from '../assets/resume-infos/types';
+import type { Profile } from "../assets/resume-infos/types";
 
 type Props = {
   profile: Profile;
@@ -15,7 +15,7 @@ const ProfileContainer = styled.div`
   align-items: center;
   padding-bottom: 5px;
 
-  h1 {
+  h1 > span {
     font-size: 26px;
   }
 `;
@@ -23,8 +23,13 @@ const ProfileContainer = styled.div`
 const ContactInfo = styled.div`
   display: flex;
   font-size: small;
-  gap: 10px;
+  gap: 3px;
   margin-top: 4px;
+
+  .profile-icon {
+    color: black;
+    font-size: 20px;
+  }
 
   a {
     display: flex;
@@ -32,12 +37,7 @@ const ContactInfo = styled.div`
     gap: 5px;
     color: black;
     font-weight: semibold;
-
-    .profile-icon {
-      color: black;
-      font-size: 20px;
-      cursor: pointer;
-    }
+    margin-right: 5px;
 
     span {
       border-bottom: solid gray 1px;
@@ -46,32 +46,89 @@ const ContactInfo = styled.div`
 `;
 
 const ProfileFC: FC<Props> = ({ profile }) => {
-  const { name, phone, email, linkedin, github, address } = profile;
+  const {
+    firstName,
+    lastName,
+    preferredName,
+    phone,
+    homeStreet,
+    homeCity,
+    homeState,
+    homeZip,
+    email,
+    linkedin,
+    github,
+    address,
+  } = profile;
 
   return (
     <ProfileContainer>
-      <h1>{name}</h1>
-      {/* if address is not empty, show*/ address !== '' && <p>{address}</p>}
-      {/*<p>{address}</p>*/}
+      <h1>
+        <span onClick={() => navigator.clipboard.writeText(firstName)}>
+          {preferredName}
+        </span>
+        <span onClick={() => navigator.clipboard.writeText(preferredName)}>
+          {" "}
+        </span>
+        <span onClick={() => navigator.clipboard.writeText(lastName)}>
+          {lastName}
+        </span>
+      </h1>
+      {address !== "" && (
+        <p>
+          {(() => {
+            const addressArr = address.split(",");
+            return (
+              <>
+                <span onClick={() => navigator.clipboard.writeText(homeStreet)}>
+                  {addressArr[0]}
+                </span>
+                <span onClick={() => navigator.clipboard.writeText(homeCity)}>
+                  ,{" "}
+                </span>
+                <span onClick={() => navigator.clipboard.writeText(homeState)}>
+                  {addressArr[1]}
+                </span>
+              </>
+            );
+          })()}
+        </p>
+      )}
       <ContactInfo>
+        <AiFillPhone
+          className='profile-icon'
+          onClick={() => {
+            const cleaned = phone.replace(/\D/g, "");
+            const cleanedPhone = `(${cleaned.slice(0, 3)})${cleaned.slice(3, 6)}-${cleaned.slice(6)}`;
+            navigator.clipboard.writeText(cleanedPhone);
+          }}
+        />
         <a href={`tel:${phone}`}>
-          {/*<AiFillPhone className='profile-icon' />*/}
           <span>{phone}</span>
         </a>
-        <span>|</span>
+        {/*<span>|</span>*/}
+        <MdEmail
+          className='profile-icon'
+          onClick={() => navigator.clipboard.writeText(email)}
+        />
         <a href={`mailto:${email}`}>
-          {/*<MdEmail className='profile-icon' />*/}
           <span>{email}</span>
         </a>
-        <span>|</span>
+        {/*<span>|</span>*/}
+        <AiFillLinkedin
+          className='profile-icon'
+          onClick={() => navigator.clipboard.writeText(linkedin)}
+        />
         <a href={linkedin}>
-          {/*<AiFillLinkedin className='profile-icon' />*/}
-          <span>{linkedin.substring(linkedin.indexOf('linkedin'))}</span>
+          <span>{linkedin.substring(linkedin.indexOf("linkedin"))}</span>
         </a>
-        <span>|</span>
+        {/*<span>|</span>*/}
+        <AiFillGithub
+          className='profile-icon'
+          onClick={() => navigator.clipboard.writeText(github)}
+        />
         <a href={github}>
-          {/*<AiFillGithub className='profile-icon' />*/}
-          <span>{github.substring(github.indexOf('github'))}</span>
+          <span>{github.substring(github.indexOf("github"))}</span>
         </a>
       </ContactInfo>
     </ProfileContainer>

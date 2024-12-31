@@ -38,20 +38,30 @@ const EducationFC: FC<Props> = ({ educations }) => {
   const { hidden, educationList } = educations;
   if (hidden) return <></>;
   return (
-    <div className="education-container">
+    <div className='education-container'>
       <PartTitle title={"EDUCATIONS"} />
       <EduContainer>
         {educationList.map((education, idx) => {
           const { hidden, university, major, address, duration } = education;
-          if (hidden) return <></>;
+          if (hidden) return <div key={idx}></div>;
           return (
-            <EduExpContainer>
+            <EduExpContainer key={idx}>
               <InstituteInfo>
-                <h3>{university}, </h3>
-                <span>{major}, </span>
-                <span>{address}</span>
+                <h3 onClick={() => navigator.clipboard.writeText(university)}>
+                  {university},{" "}
+                </h3>
+                <span
+                  onClick={() =>
+                    navigator.clipboard.writeText("Computer Science")
+                  }
+                >
+                  {major}
+                </span>
+                <span onClick={() => navigator.clipboard.writeText(address)}>
+                  {address}
+                </span>
               </InstituteInfo>
-              <div className="duration">{duration}</div>
+              <div className='duration'>{duration}</div>
             </EduExpContainer>
           );
         })}
