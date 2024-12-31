@@ -16,6 +16,10 @@ const ProjectTitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 18px;
+
+  span {
+    font-style: italic;
+  }
 `;
 
 const ProjectsInfo = styled.div`
