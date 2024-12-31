@@ -1,26 +1,27 @@
-import { FC } from 'react'
+import React, { FC } from "react";
 
-import { FaOctopusDeploy } from 'react-icons/fa'
-import { SiGithub } from 'react-icons/si'
-import styled from 'styled-components'
+import { FaOctopusDeploy } from "react-icons/fa";
+import { SiGithub } from "react-icons/si";
+import styled from "styled-components";
+import { getDateMMYYYY } from "../assets/Utility/Utils";
 
 type Props = {
-  name: string
-  github: string | undefined
-  deploy: string | undefined
-  duration: string
-}
+  name: string;
+  github: string | undefined;
+  deploy: string | undefined;
+  duration: string;
+};
 
 const ProjectTitleContainer = styled.div`
   display: flex;
   justify-content: space-between;
   height: 18px;
-`
+`;
 
 const ProjectsInfo = styled.div`
   display: flex;
   gap: 5px;
-`
+`;
 
 const IconButton = styled.a`
   display: flex;
@@ -43,13 +44,13 @@ const IconButton = styled.a`
   span {
     font-size: 10px;
   }
-`
+`;
 
 const ProjectTitle: FC<Props> = ({ name, github, deploy, duration }) => {
   return (
     <ProjectTitleContainer>
       <ProjectsInfo>
-        <h3>{name} </h3>
+        <h3 onClick={() => navigator.clipboard.writeText(name)}>{name} </h3>
         {github && (
           <IconButton href={github}>
             <SiGithub /> <span>Git Repo</span>
@@ -62,9 +63,32 @@ const ProjectTitle: FC<Props> = ({ name, github, deploy, duration }) => {
           </IconButton>
         )}
       </ProjectsInfo>
-      <div className='duration'>{duration}</div>
+      <div className='duration'>
+        {(() => {
+          const durations = duration.split("-");
+          return (
+            <div>
+              <span
+                onClick={() =>
+                  navigator.clipboard.writeText(getDateMMYYYY(durations[0]))
+                }
+              >
+                {durations[0]}
+              </span>
+              <span> - </span>
+              <span
+                onClick={() =>
+                  navigator.clipboard.writeText(getDateMMYYYY(durations[1]))
+                }
+              >
+                {durations[1]}
+              </span>
+            </div>
+          );
+        })()}
+      </div>
     </ProjectTitleContainer>
-  )
-}
+  );
+};
 
-export default ProjectTitle
+export default ProjectTitle;

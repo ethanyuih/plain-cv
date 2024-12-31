@@ -1,11 +1,17 @@
 export type Profile = {
   hidden?: boolean;
-  name: string;
+  firstName: string;
+  lastName: string;
+  preferredName: string;
   phone: string;
   email: string;
   linkedin: string;
   github: string;
   address: string;
+  homeState: string;
+  homeStreet: string;
+  homeCity: string;
+  homeZip: string;
 };
 
 export type Education = {

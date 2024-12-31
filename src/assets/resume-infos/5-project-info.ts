@@ -5,7 +5,7 @@ export const projectInfo: Projects = {
     {
       hidden: false,
       name: "TikTik: a TikTok like video sharing App based on React",
-      duration: "Dec. 2022 - Jan.2023",
+      duration: "December 2022 - January 2023",
       githubLink: "https://github.com/easianyu/tiktok-app",
       deployLink: "https://tiktok-app-plum.vercel.app/",
       taskList: [
@@ -18,7 +18,7 @@ export const projectInfo: Projects = {
     {
       hidden: true,
       name: "Online Shopping Website Based on React",
-      duration: "Nov. 2022 - Dec.2022",
+      duration: "November 2022 - December 2022",
       githubLink: "https://github.com/easianyu/yixuan-kkshop",
       deployLink: "https://inquisitive-starlight-56e8cb.netlify.app/",
       taskList: [
@@ -57,7 +57,7 @@ export const projectInfo: Projects = {
     {
       hidden: true,
       name: "Easian's CSS Hub: Arts and Animations of CSS Works",
-      duration: "Dec. 2022 - Present",
+      duration: "December 2022 - Present",
       githubLink: "https://github.com/easianyu/css-hub",
       deployLink: "https://easianyu.github.io/css-hub/",
       taskList: [
