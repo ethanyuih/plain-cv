@@ -10,9 +10,9 @@ export const experienceInfo: Experiences = {
         {
           hidden: false,
           position: "Software Engineer",
-          duration: "June 2023 - Now",
+          duration: "June 2023 - Present",
           taskList: [
-            "Architected and implemented new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time",
+            "Architected and implemented new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
             "Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.",
             "Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.",
             "Implemented Hangfire for background task processing, achieving 60% reduction in server load",
@@ -30,7 +30,7 @@ export const experienceInfo: Experiences = {
             "Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.",
             "Participated in developing a CRM frontend application using Vue 3 with TypeScript.",
             "Utilized vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.",
-            "Engineered reusable layout container components utilizing Vue.js slot interfaces and ElementUI",
+            "Engineered reusable layout container components utilizing Vue.js slot interfaces and ElementUI.",
             // "Strengthened the reliability by implementing comprehensive unit testing for core components using vue-test-utils",
             "Implemented responsive layouts with rem/flexbox and Sass, enabling white-label customization for third-party sales.",
           ],
@@ -48,8 +48,8 @@ export const experienceInfo: Experiences = {
           duration: "June. 2022 - Sept. 2022",
           taskList: [
             "Optimized x265 image encoding performance using C++ and SIMD instructions (SSE/AVX, NEON), implementing JavaScript APIs for data packing, resulting in 60% faster encoding speeds.",
-            "Optimized image conversion pipeline using x265 and libheif, reducing encoding time by 36% and achieving 22% better compression compared to WebP format.",
-            "Applied optimized image format into Meituan App using React Native",
+            "Designed and implemented  image conversion pipeline using x265 and libheif, reducing encoding time by 36% and achieving 22% better compression compared to WebP format.",
+            "Applied optimized image format into Meituan App using React Native.",
           ],
         },
       ],

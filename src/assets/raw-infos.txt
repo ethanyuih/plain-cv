@@ -1,0 +1,38 @@
+Yixuan
+Yu
+6263902933
+ethanyyou@gmail.com
+
+University of Southern California
+Computer Science
+August 2021 - May 2023
+
+University of Science and Technology Beijing
+August 2017 - June 2021
+
+Bacera Co. Pty Ltd
+06/2023 - Present
+Software Engineer
+1. Architected and implemented new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time
+2. Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.
+3. Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.
+4. Implemented Hangfire for background task processing, achieving 60% reduction in server load
+5. Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging, integrated with Slack for real-time error notifications, resulting in 95% faster incident response time.
+6. Proposed and implemented API Gateway microservices using Go, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.
+7. Led the migration from current monolithic application to Kubernetes microservices, implementing gRPC for inter-service communication and separating core functionalities into scalable services.
+
+Software Engineer Intern
+1. Developed real-time trade monitoring system with .NET Core, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.
+2. Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.
+3. Participated in developing a CRM frontend application using Vue 3 with TypeScript.
+4. Utilized vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.
+5. Engineered reusable layout container components utilizing Vue.js slot interfaces and ElementUI.
+6. Implemented responsive layouts with rem/flexbox and Sass, enabling white-label customization for third-party sales.
+
+
+Meituan
+06/2022 - 09/2022
+Software Engineer Intern
+1. Optimized x265 image encoding performance using C++ and SIMD instructions (SSE/AVX, NEON), implementing JavaScript APIs for data packing, resulting in 60% faster encoding speeds.
+2. Designed and implemented image conversion pipeline using x265 and libheif, reducing encoding time by 36% and achieving 22% better compression compared to WebP format.
+3. Applied optimized image format into Meituan App using React Native.
