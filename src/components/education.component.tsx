@@ -7,7 +7,7 @@ type Props = {
   educations: Educations;
 };
 
-const EdusContainer = styled.div`
+const EduContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -40,7 +40,7 @@ const EducationFC: FC<Props> = ({ educations }) => {
   return (
     <div className="education-container">
       <PartTitle title={"EDUCATIONS"} />
-      <EdusContainer>
+      <EduContainer>
         {educationList.map((education, idx) => {
           const { hidden, university, major, address, duration } = education;
           if (hidden) return <></>;
@@ -55,7 +55,7 @@ const EducationFC: FC<Props> = ({ educations }) => {
             </EduExpContainer>
           );
         })}
-      </EdusContainer>
+      </EduContainer>
     </div>
   );
 };
