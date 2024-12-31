@@ -5,11 +5,11 @@ export const skillInfo: Skills = {
     {
       skillType: "Languages",
       skillItems: [
-        "C#",
         "Go",
-        "SQL",
         "TypeScript",
         "JavaScript",
+        "SQL",
+        "C#",
         "HTML",
         "CSS",
         "C++",
@@ -20,13 +20,13 @@ export const skillInfo: Skills = {
     {
       skillType: "Frameworks",
       skillItems: [
+        "Gorm",
+        "Gin",
+        "gRPC",
         ".NET Core",
         "EF Core",
         "Hangfire",
         "RESTful API",
-        "gRPC",
-        "Gorm",
-        "Gin",
         "Vue",
         "React",
         "Unity",
