@@ -25,10 +25,9 @@ export const skillInfo: Skills = {
         "Hangfire",
         "RESTful API",
         "gRPC",
-        "Vue.js",
-        "Vuex",
         "GORM",
         "GIN",
+        "Vue",
         "React",
         "Unity",
 
@@ -42,10 +41,11 @@ export const skillInfo: Skills = {
       ],
     },
     {
-      skillType: "Database/Tools",
+      skillType: "Tools",
       skillItems: [
         "PostgreSQL",
         "Nginx",
+        "Jenkins",
         "Redis",
         "Docker",
         "K8s",

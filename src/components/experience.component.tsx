@@ -64,6 +64,7 @@ const TitleContainer = styled.div`
   //justify-content: space-between;
   //font-size: 14px;
 `;
+
 const TitleHead = styled.div`
   display: flex;
   justify-content: space-between;
@@ -80,7 +81,7 @@ const ExperienceFC: FC<Props> = ({ experiences }) => {
   if (hidden) return <></>;
   return (
     <ProjectsContainer>
-      <PartTitle title="Experience" />
+      <PartTitle title='Experience' />
       {experienceList.map((exp, idx) => {
         const { hidden, company, address, titles } = exp;
         if (hidden) return <></>;

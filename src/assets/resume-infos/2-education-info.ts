@@ -1,4 +1,4 @@
-import { Educations } from './types'
+import { Educations } from './types';
 
 export const educationInfo: Educations = {
   educationList: [
@@ -11,8 +11,8 @@ export const educationInfo: Educations = {
     {
       university: 'University of Science and Technology Beijing',
       major: 'BEng of Computer Science',
-      address: 'Beijing',
+      address: 'Beijing, China',
       duration: 'Aug.2017 - Jun. 2021',
     },
   ],
-}
+};

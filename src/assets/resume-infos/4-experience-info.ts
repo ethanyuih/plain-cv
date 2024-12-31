@@ -13,10 +13,10 @@ export const experienceInfo: Experiences = {
           duration: "June 2023 - Now",
           taskList: [
             "Architected and implemented new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from legacy PHP Laravel system to PostgreSQL database, achieving a 500% improvement in average response time",
+            "Established automated CI/CD workflow with Jenkins, enabling seamless code integration and deployment while reducing deployment time by 80%.",
             "Utilized Duende IdentityServer to integrate OAuth for secure authentication and JWT for stateless authorization.",
             "Implemented Hangfire for background task processing, achieving 60% reduction in server load",
             "Architected robust cloud infrastructure using AWS S3 for media storage and AWS CloudWatch for logging, integrated with Slack for real-time error notifications, resulting in 95% faster incident response time and reducing system downtime by 40% through proactive monitoring.",
-
             "Proposed and implemented API Gateway microservices using Go, centralizing WebSocket channel management and integrating ETCD for service discovery across HTTP and gRPC endpoints.",
             "Led the migration from current monolithic application to Kubernetes microservices, implementing gRPC for inter-service communication and separating core functionalities into scalable services.",
           ],
@@ -26,11 +26,13 @@ export const experienceInfo: Experiences = {
           position: "Software Engineer Intern",
           duration: "January 2023 - June 2023",
           taskList: [
-            "Participated in developing a CRM frontend application using Vue 3 with TypeScript, implementing vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.",
+            "Developed real-time trade monitoring system with .NET Core, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.",
+            "Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.",
+            "Participated in developing a CRM frontend application using Vue 3 with TypeScript.",
+            "Utilized vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.",
             "Engineered reusable layout container components utilizing Vue.js slot interfaces and ElementUI",
-            "Strengthened the reliability by implementing comprehensive unit testing for core components using vue-test-utils",
-            "Implemented responsive mobile layouts with rem/flexbox and Sass theming, enabling white-label customization for third-party sales.",
-            "Developed real-time trade monitoring system with Go, leveraging AWS SQS and Kafka for distributed message processing and instant trading feedback.",
+            // "Strengthened the reliability by implementing comprehensive unit testing for core components using vue-test-utils",
+            "Implemented responsive layouts with rem/flexbox and Sass, enabling white-label customization for third-party sales.",
           ],
         },
       ],
@@ -38,7 +40,7 @@ export const experienceInfo: Experiences = {
     {
       hidden: false,
       company: "Meituan",
-      address: "Beijing",
+      address: "Beijing, China",
       titles: [
         {
           hidden: false,
@@ -55,7 +57,7 @@ export const experienceInfo: Experiences = {
     {
       hidden: false,
       company: "University of Science and Technology Beijing",
-      address: "Beijing",
+      address: "Beijing, China",
       titles: [
         {
           hidden: false,
@@ -70,7 +72,7 @@ export const experienceInfo: Experiences = {
     {
       hidden: false,
       company: "Institute of Automation, Chinese Academy of Sciences",
-      address: "Beijing",
+      address: "Beijing, China",
       titles: [
         {
           hidden: false,
