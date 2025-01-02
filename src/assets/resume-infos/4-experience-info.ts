@@ -1,9 +1,10 @@
 import { Experiences } from "./types";
-
+// Based on the job description and my resume, help me generate a cover letter
 export const experienceInfo: Experiences = {
   experienceList: [
     {
       hidden: false,
+      // Nexus Point Group Corp (formerly Cascadia Capital Corp) serves as an affiliated technology support provider for Bacera Co. Pty Ltd.
       company: "Bacera Co. Pty Ltd",
       address: "Alhambra, California",
       titles: [
