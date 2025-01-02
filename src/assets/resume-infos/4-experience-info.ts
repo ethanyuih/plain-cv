@@ -13,7 +13,6 @@ export const experienceInfo: Experiences = {
           duration: "June 2023 - Present",
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
-            // "Decomposed the monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
             "Architected and led the decomposition of monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
             "Designed and built a central API Gateway leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%,.",
             "Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
@@ -34,7 +33,7 @@ export const experienceInfo: Experiences = {
             "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
             "Engineered real-time trade monitoring systems with Go + Gorm, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.",
             "Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.",
-            // "Participated in developing a CRM frontend application using Vue 3 with TypeScript.",
+            "Participated in developing a CRM frontend application using Vue 3 with TypeScript.",
             // "Utilized vue-i18n for internationalization, which enabled successful market expansion into Vietnam and Japan.",
             // "Engineered reusable layout container components utilizing Vue.js slot interfaces and ElementUI.",
             // "Strengthened the reliability by implementing comprehensive unit testing for core components using vue-test-utils",
