@@ -6,7 +6,7 @@ import PartTitle from "./part-title.component";
 import styled from "styled-components";
 import pageConfig from "../assets/resume-infos/0-page-setting";
 import PlainText from "./plaintext.component";
-import { getDateMMYYYY } from "../assets/Utility/Utils";
+import { getDateMMYYYY } from "../assets/utility/utils";
 
 type Props = {
   experiences: Experiences;

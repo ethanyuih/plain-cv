@@ -3,7 +3,7 @@ import React, { FC } from "react";
 import { FaOctopusDeploy } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import styled from "styled-components";
-import { getDateMMYYYY } from "../assets/Utility/Utils";
+import { getDateMMYYYY } from "../assets/utility/utils";
 
 type Props = {
   name: string;
