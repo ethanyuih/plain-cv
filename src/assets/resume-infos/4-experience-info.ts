@@ -14,7 +14,7 @@ export const experienceInfo: Experiences = {
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
             "Architected and led the decomposition of monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
-            "Designed and built a central API Gateway using Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%,.",
+            "Designed and built a central API Gateway using Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%.",
             "Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
             "Engineered custom authentication service using Go-OAuth2 and JWT tokens, implementing role-based access control (RBAC) with middleware for secure inter-service authorization, improving application security by 35%.",
             "Enhanced database performance through query optimization by implementing proper indexing, query rewriting, and PostgreSQL VACUUM scheduling, resulting in a 40% improvement.",
