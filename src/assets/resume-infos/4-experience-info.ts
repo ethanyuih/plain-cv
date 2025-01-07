@@ -15,7 +15,9 @@ export const experienceInfo: Experiences = {
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET Core + EF Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
             // "Implemented Hangfire for background task processing, achieving 60% reduction in server load.",
-            "Developed new Multi-Tenant RESTful APIs using .NET Core + EF Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
+            // "Developed new Multi-Tenant RESTful APIs using .NET Core + EF Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
+            "Built RESTful API endpoints using .NET 8.0 with C#, achieving a 500% improvement in API response time.",
+            "Designed and implemented multi-tenant database architecture using PostgreSQL and Entity Framework Core.",
             "Utilized Duende to integrate OAuth for secure authentication and JWT for stateless authorization, implementing role-based access control (RBAC) with middleware for request authorization, improving application security by 35%.",
             "Architected and led the decomposition of monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
             "Designed and built a central API Gateway leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%,.",

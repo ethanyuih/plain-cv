@@ -54,7 +54,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
     homeStreet,
     homeCity,
     homeState,
-    homeZip,
+    // homeZip,
     email,
     linkedin,
     github,
@@ -96,7 +96,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
       )}
       <ContactInfo>
         <AiFillPhone
-          className='profile-icon'
+          className="profile-icon"
           onClick={() => {
             const cleaned = phone.replace(/\D/g, "");
             const cleanedPhone = `(${cleaned.slice(0, 3)})${cleaned.slice(3, 6)}-${cleaned.slice(6)}`;
@@ -108,7 +108,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
         </a>
         {/*<span>|</span>*/}
         <MdEmail
-          className='profile-icon'
+          className="profile-icon"
           onClick={() => navigator.clipboard.writeText(email)}
         />
         <a href={`mailto:${email}`}>
@@ -116,7 +116,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
         </a>
         {/*<span>|</span>*/}
         <AiFillLinkedin
-          className='profile-icon'
+          className="profile-icon"
           onClick={() => navigator.clipboard.writeText(linkedin)}
         />
         <a href={linkedin}>
@@ -124,7 +124,7 @@ const ProfileFC: FC<Props> = ({ profile }) => {
         </a>
         {/*<span>|</span>*/}
         <AiFillGithub
-          className='profile-icon'
+          className="profile-icon"
           onClick={() => navigator.clipboard.writeText(github)}
         />
         <a href={github}>
