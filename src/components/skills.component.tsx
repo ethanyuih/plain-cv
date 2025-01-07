@@ -1,8 +1,8 @@
-import { FC } from 'react';
-import styled from 'styled-components';
-import { Skills } from '../assets/resume-infos/types';
-import PartTitle from './part-title.component';
-import SkillType from './skill-type.component';
+import { FC } from "react";
+import styled from "styled-components";
+import { Skills } from "../assets/resume-infos/types";
+import PartTitle from "./part-title.component";
+import SkillType from "./skill-type.component";
 type Props = {
   skills: Skills;
 };
@@ -10,8 +10,8 @@ type Props = {
 const SkillTypesContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 3px;
-  padding-bottom: 3px;
+  //gap: 1px;
+  padding-bottom: 1px;
 `;
 
 const SkillsFC: FC<Props> = ({ skills }) => {
@@ -22,7 +22,11 @@ const SkillsFC: FC<Props> = ({ skills }) => {
       <PartTitle title='skills' />
       <SkillTypesContainer>
         {skillList.map((skill, idx) => (
-          <SkillType key={idx} skillName={skill.skillType} skillItems={skill.skillItems} />
+          <SkillType
+            key={idx}
+            skillName={skill.skillType}
+            skillItems={skill.skillItems}
+          />
         ))}
       </SkillTypesContainer>
     </div>

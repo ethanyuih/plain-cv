@@ -8,12 +8,23 @@ type Props = {
 
 const PlainTextContainer = styled.div`
   line-height: ${pageConfig.plainLineHeight}px;
+  span {
+    font-style: italic;
+    //font-size: 14px;
+  }
 `;
 
 const PlainText: FC<Props> = ({ text }) => {
+  const textContent = text.substring(0, text.lastIndexOf("(")).trim();
+  const skills = text.substring(
+    text.lastIndexOf("(") + 1,
+    text.lastIndexOf(")"),
+  );
   return (
     <PlainTextContainer>
-      {text}
+      {/*{text}*/}
+      {textContent}
+      <span> ({skills})</span>
       {/*{text.split(' ').map((word, idx) => {*/}
       {/*  if (word[0] === '#' && word[word.length - 1] === '#') {*/}
       {/*    return (*/}
