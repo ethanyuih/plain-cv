@@ -9,9 +9,9 @@ export const projectInfo: Projects = {
       githubLink: "https://github.com/easianyu/tiktok-app",
       deployLink: "https://tiktok-app-plum.vercel.app/",
       taskList: [
-        "Developed a real-time social video platform using Next.js/TypeScript, integrating Sanity backend with GraphQL for optimized content delivery and user interactions.",
-        "Engineered efficient state management using Zustand and custom React hooks, streamlining user profile management and social feature interactions.",
-        "Built responsive and UI with TailwindCSS, ensuring consistent user experience across all device sizes.",
+        "Developed a real-time social video platform using Next.js/TypeScript, integrating Sanity backend with GraphQL for optimized content delivery and user interactions. (Next.js/TypeScript, GraphQL)",
+        "Engineered efficient state management using Zustand and custom React hooks, streamlining user profile management and social feature interactions. (Zustand, Hooks)",
+        "Built responsive and UI with TailwindCSS, ensuring consistent user experience across all device sizes. (TailwindCSS)",
         // "Used Zustand to store users' state. And Customized the useAuthStore() hook to make managing users' profile, adding and removing likes, and fetching all users more easily",
       ],
     },
