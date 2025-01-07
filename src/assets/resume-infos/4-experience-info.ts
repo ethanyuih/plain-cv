@@ -20,7 +20,7 @@ export const experienceInfo: Experiences = {
             "Designed and implemented multi-tenant database architecture using PostgreSQL and Entity Framework Core.",
             "Utilized Duende to integrate OAuth for secure authentication and JWT for stateless authorization, implementing role-based access control (RBAC) with middleware for request authorization, improving application security by 35%.",
             "Architected and led the decomposition of monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
-            "Designed and built a central API Gateway with Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%,.",
+            "Designed and built a central API Gateway with Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%.",
             "Implemented gRPC with Go for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
             "Enhanced database performance through query optimization by implementing proper indexing, query rewriting, and PostgreSQL VACUUM scheduling, resulting in a 40% improvement.",
             // "Built and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.",
