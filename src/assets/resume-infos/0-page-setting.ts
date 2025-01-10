@@ -5,7 +5,7 @@ export const pageConfig = {
   sectionGap: 0,
   paragraphGap: 10,
   taskGap: 3,
-  plainLineHeight: 18,
+  plainLineHeight: 16,
 };
 
 export default pageConfig;
