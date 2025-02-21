@@ -13,7 +13,7 @@ export const experienceInfo: Experiences = {
           duration: "June 2023 - Present",
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
-            "Architected and led the decomposition of monolithic CRM application into 8+ microservices on Kubernetes, reducing deployment time by 70% while maintaining system reliability and data consistency..",
+            "Architected and led the decomposition of monolithic CRM application into 8+ microservices on Kubernetes, reducing deployment time by 70% while maintaining system reliability and data consistency.",
             "Designed and built a central API Gateway using Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%.",
             "Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
             "Engineered custom authentication service using Go-OAuth2 and JWT tokens, implementing role-based access control (RBAC) with middleware for secure inter-service authorization, improving application security by 35%.",
