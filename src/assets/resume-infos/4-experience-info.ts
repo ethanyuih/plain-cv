@@ -13,7 +13,7 @@ export const experienceInfo: Experiences = {
           duration: "June 2023 - Present",
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET Core, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
-            "Architected and led the decomposition of monolithic application into 8+ microservices on Kubernetes, reducing deployment time by 70%.",
+            "Architected and led the decomposition of monolithic CRM application into 8+ microservices on Kubernetes, reducing deployment time by 70% while maintaining system reliability and data consistency..",
             "Designed and built a central API Gateway using Go, leveraging ETCD's watch mechanism for service discovery, eliminating polling overhead and reducing service lookup latency by 55%.",
             "Implemented gRPC for inter-service communication across 10+ service endpoints, resulting in 40% reduced service latency and 30% decreased network bandwidth usage.",
             "Engineered custom authentication service using Go-OAuth2 and JWT tokens, implementing role-based access control (RBAC) with middleware for secure inter-service authorization, improving application security by 35%.",
@@ -31,7 +31,7 @@ export const experienceInfo: Experiences = {
           duration: "January 2023 - June 2023",
           taskList: [
             // "Developed new Multi-Tenant RESTful APIs using .NET 8.0 with C#, successfully migrating from the legacy system to PostgreSQL database, achieving a 500% improvement in average response time.",
-            "Built RESTful API endpoints using .NET 8.0 with C#, achieving a 500% improvement in API response time.",
+            "Built and deployed high-performance RESTful API endpoints for our CRM on AWS EC2 using .NET 8.0 with C#, achieving a 500% improvement in API response time.",
             "Designed and implemented multi-tenant database architecture using PostgreSQL and Entity Framework Core.",
             "Engineered real-time trade monitoring systems with Go + Gorm, leveraging AWS SQS and Kafka for distributed message processing, achieving 100K messages/second throughput and sub-50ms trading feedback latency.",
             "Implemented and maintained third party payment integrations, preventing duplicate transactions through Redis-based distributed locking, achieving 99.99% processing accuracy.",
