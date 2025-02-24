@@ -48,10 +48,10 @@ const Home = () => {
     <MainContainer marginX={marginX} marginY={marginY} fixHeight={fixHeight}>
       <InnerContent>
         <ProfileFC profile={profileInfo} />
-        <EducationFC educations={educationInfo} />
-        <SkillsFC skills={skillInfo} />
         <ExperienceFC experiences={experienceInfo} />
         <ProjectsFC projects={projectInfo} />
+        <SkillsFC skills={skillInfo} />
+        <EducationFC educations={educationInfo} />
         <PatentFC patents={patentInfo} />
       </InnerContent>
     </MainContainer>

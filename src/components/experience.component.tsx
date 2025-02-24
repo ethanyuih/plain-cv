@@ -1,12 +1,12 @@
-import React, { FC } from "react";
+import React, { FC } from 'react';
 
-import { ProjectsContainer, ProjectItem } from "./projects.component";
-import { Experiences } from "../assets/resume-infos/types";
-import PartTitle from "./part-title.component";
-import styled from "styled-components";
-import pageConfig from "../assets/resume-infos/0-page-setting";
-import PlainText from "./plaintext.component";
-import { getDateMMYYYY } from "../assets/utility/utils";
+import { ProjectsContainer, ProjectItem } from './projects.component';
+import { Experiences } from '../assets/resume-infos/types';
+import PartTitle from './part-title.component';
+import styled from 'styled-components';
+import pageConfig from '../assets/resume-infos/0-page-setting';
+import PlainText from './plaintext.component';
+import { getDateMMYYYY } from '../assets/utility/utils';
 
 type Props = {
   experiences: Experiences;
@@ -15,20 +15,13 @@ type Props = {
 const ExpContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  font-size: 14px;
-
-  div:nth-child(2) {
-    font-style: italic;
-  }
-`;
-
-const InstituteInfo = styled.div`
-  display: flex;
-  align-items: baseline;
-  gap: 5px;
-
-  div:nth-of-type(1) {
+  //font-size: 14px;
+  div {
     font-weight: bold;
+  }
+
+  span {
+    font-style: italic;
   }
 `;
 
@@ -90,47 +83,29 @@ const ExperienceFC: FC<Props> = ({ experiences }) => {
         return (
           <ProjectItem key={idx}>
             <ExpContainer>
-              <InstituteInfo>
-                <div onClick={() => navigator.clipboard.writeText(company)}>
-                  {company},
-                </div>
-                <span onClick={() => navigator.clipboard.writeText(address)}>
-                  {address}
-                </span>
-              </InstituteInfo>
+              <div onClick={() => navigator.clipboard.writeText(company)}>{company}</div>
+              <span onClick={() => navigator.clipboard.writeText(address)}>{address}</span>
             </ExpContainer>
 
             {titles.map((title, title_idx) => (
               <TitleContainer key={title_idx}>
                 <TitleHead>
-                  <div
-                    onClick={() =>
-                      navigator.clipboard.writeText(title.position)
-                    }
-                  >
+                  <div onClick={() => navigator.clipboard.writeText(title.position)}>
                     {title.position}
                   </div>
 
                   {(() => {
-                    const durations = title.duration.split("-");
+                    const durations = title.duration.split('-');
                     return (
                       <div>
                         <span
-                          onClick={() =>
-                            navigator.clipboard.writeText(
-                              getDateMMYYYY(durations[0]),
-                            )
-                          }
+                          onClick={() => navigator.clipboard.writeText(getDateMMYYYY(durations[0]))}
                         >
                           {durations[0]}
                         </span>
                         <span> - </span>
                         <span
-                          onClick={() =>
-                            navigator.clipboard.writeText(
-                              getDateMMYYYY(durations[1]),
-                            )
-                          }
+                          onClick={() => navigator.clipboard.writeText(getDateMMYYYY(durations[1]))}
                         >
                           {durations[1]}
                         </span>
@@ -141,9 +116,7 @@ const ExperienceFC: FC<Props> = ({ experiences }) => {
                 <div
                   onClick={() =>
                     navigator.clipboard.writeText(
-                      title.taskList
-                        .map((task, task_idx) => `${task_idx + 1}. ${task}\n`)
-                        .join(""),
+                      title.taskList.map((task, task_idx) => `${task_idx + 1}. ${task}\n`).join('')
                     )
                   }
                 >
