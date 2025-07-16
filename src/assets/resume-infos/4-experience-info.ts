@@ -52,7 +52,7 @@ export const experienceInfo: Experiences = {
     },
     {
       hidden: false,
-      company: "Meituan",
+      company: "Meituan, Beijing Sankuai Online Technology Co., Ltd",
       address: "Beijing, China",
       titles: [
         {
