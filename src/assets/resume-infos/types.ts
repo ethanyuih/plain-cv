@@ -40,6 +40,7 @@ export type Skills = {
 export type Experience = {
   hidden?: boolean;
   company: string;
+  companyComment?: string;
   address: string;
   titles: TitleExperience[];
 };

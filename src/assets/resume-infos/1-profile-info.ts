@@ -9,9 +9,9 @@ export const profileInfo: Profile = {
   linkedin: "https://www.linkedin.com/in/ethanyuih",
   github: "https://www.github.com/ethanyuih",
   // address: '153 S Muscatel Ave, San Gabriel, CA, 91776',
-  address: "Los Angeles, California (Willing to relocate)",
+  address: "San Jose, California",
   homeState: "California",
-  homeStreet: "153 S Muscatel Ave",
-  homeCity: "San Gabriel",
-  homeZip: "91776",
+  homeStreet: "251 Brandon St Apt 422",
+  homeCity: "San Jose",
+  homeZip: "95134",
 };
