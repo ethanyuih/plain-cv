@@ -29,7 +29,7 @@ export const experienceInfo: Experiences = {
       hidden: false,
       // Nexus Point Group Corp (formerly Cascadia Capital Corp) serves as an affiliated technology support provider for Bacera Co. Pty Ltd.
       company: "Bacera Co. Pty Ltd",
-      companyComment: "via Nexus Point Group Corp & Cascadia Capital Corp",
+      companyComment: "",
       address: "Alhambra, California",
       titles: [
         {
@@ -44,7 +44,7 @@ export const experienceInfo: Experiences = {
             "Built and deployed high-performance RESTful API endpoints for our CRM on AWS EC2 using Golang with Gin, implementing Nginx for load balancing and reverse proxy with HTTP support, leveraging Redis for data caching, which can handle 10K concurrent requests.",
             "Architected a multi-tenant database architecture using PostgreSQL with Gorm as ORM provider.",
             // "Utilized Duende IdentityServer with OAuth2 for secure authentication and JWT for stateless authorization, implementing role-based access control (RBAC) with middleware for request authorization, while determining user's tenant affiliation by extracting tenant identifiers from JWT claims in the multi-tenant middleware, eliminating the need for URL-based tenant identification.",
-            "Designed and developed a unified Transaction Management system using Finite State Machines (FSM) with explicit Matter-State-Action architecture to efficiently handle transactions, including withdrawals, deposits, and rebate commissions.",
+            "Designed and developed a unified Transaction Management system using Finite State Machines (FSM) to handle multi-currency operations including withdrawals, deposits, rebates, and FX conversions with automated accounting and reconciliation.",
             "Integrated 17 third-party Payment Gateways and corresponding webhooks, enabling seamless financial transactions.",
             // "Led the decomposition of monolithic CRM application into 8+ microservices on Kubernetes with gRPC inter-service communication, reducing deployment time from 40 minutes to 15 minutes while maintaining system reliability and data consistency.",
             // "Engineered and built a central API Gateway with Go, leveraging ETCD's watch mechanism for service registration and discovery.",
