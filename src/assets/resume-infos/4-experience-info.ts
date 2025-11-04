@@ -16,9 +16,7 @@ export const experienceInfo: Experiences = {
           taskList: [
             "Responsible for internal RDS platform development at ByteDance, including architecture design and optimization for MySQL and ByteNDB, as well as the Platform, Proxy, and High-Availability components. Provided stable and scalable database infrastructure support for core applications such as TikTok, CapCut, and Toutiao, serving tens of millions of users globally.",
             "Implemented Celery-based ticketing system for automated database operations, achieving data isolation across regions and access compliance across different jurisdictions.",
-            // "Participated in the overseas rollout of ByteDance's self-developed cloud-native ByteNDB. Leveraged compute-storage separation, log-data separation, and ultra-large storage capabilities to significantly optimize migration and scaling costs.",
-            "Established core pipelines for overseas ByteNDB including database creating, DDL operations, and proxy auto-scaling. Supported multi-storage-pool configurations within single data centers to enhance deployment stability across various data center topologies.",
-            // "Participated in the separation of overseas operational control planes (TikTok vs non-TikTok environments) to ensure content and access compliance across different jurisdictions.",
+            "Participated in the separation of overseas operational control planes (TikTok vs non-TikTok environments) to ensure content and access compliance across different jurisdictions.",
             "Developed RESTful API interfaces for the ByteCloud platform using Python Django and Go with Gorm. ",
             // "Configured Toutiao Load Balancer (TLB) for domain routing across different regions, and implemented Celery-based ticketing system for automated database operations, achieving data isolation across regions and access compliance across different jurisdictions.",
           ],
