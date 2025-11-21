@@ -82,87 +82,92 @@ const ExperienceFC: FC<Props> = ({ experiences }) => {
   return (
     <ProjectsContainer>
       <PartTitle title="Experience" />
-      {experienceList.map((exp, idx) => {
-        const { hidden, company, companyComment, address, titles } = exp;
-        if (hidden) return <div key={idx}></div>;
+      {experienceList
+        .filter((exp) => !exp.hidden)
+        .map((exp, idx) => {
+          const { company, companyComment, address, titles } = exp;
 
-        return (
-          <ProjectItem key={idx}>
-            <ExpContainer>
-              <div className="company-info">
-                <div onClick={() => navigator.clipboard.writeText(company)}>
-                  {company}
-                </div>
-                <span>{companyComment}</span>
-              </div>
-              <span onClick={() => navigator.clipboard.writeText(address)}>
-                {address}
-              </span>
-            </ExpContainer>
-
-            {titles.map((title, title_idx) => (
-              <TitleContainer key={title_idx}>
-                <TitleHead>
-                  <div
-                    onClick={() =>
-                      navigator.clipboard.writeText(title.position)
-                    }
-                  >
-                    {title.position}
+          return (
+            <ProjectItem key={idx}>
+              <ExpContainer>
+                <div className="company-info">
+                  <div onClick={() => navigator.clipboard.writeText(company)}>
+                    {company}
                   </div>
-
-                  {(() => {
-                    const durations = title.duration.split("-");
-                    return (
-                      <div>
-                        <span
-                          onClick={() =>
-                            navigator.clipboard.writeText(
-                              getDateMMYYYY(durations[0]),
-                            )
-                          }
-                        >
-                          {durations[0]}
-                        </span>
-                        <span> - </span>
-                        <span
-                          onClick={() =>
-                            navigator.clipboard.writeText(
-                              getDateMMYYYY(durations[1]),
-                            )
-                          }
-                        >
-                          {durations[1]}
-                        </span>
-                      </div>
-                    );
-                  })()}
-                </TitleHead>
-                <div
-                  onClick={() =>
-                    navigator.clipboard.writeText(
-                      title.taskList
-                        .map((task, task_idx) => `${task_idx + 1}. ${task}\n`)
-                        .join(""),
-                    )
-                  }
-                >
-                  {title.taskList.map((task, task_idx) => (
-                    <TaskDetailContainer key={task_idx}>
-                      <ParaDot>
-                        <span></span>
-                      </ParaDot>
-                      <TextDetails>
-                        <PlainText text={task} />
-                      </TextDetails>
-                    </TaskDetailContainer>
-                  ))}
+                  <span>{companyComment}</span>
                 </div>
-              </TitleContainer>
-            ))}
-          </ProjectItem>
-        );
-      })}
+                <span onClick={() => navigator.clipboard.writeText(address)}>
+                  {address}
+                </span>
+              </ExpContainer>
+
+              {titles
+                .filter((title) => !title.hidden)
+                .map((title, title_idx) => (
+                  <TitleContainer key={title_idx}>
+                    <TitleHead>
+                      <div
+                        onClick={() =>
+                          navigator.clipboard.writeText(title.position)
+                        }
+                      >
+                        {title.position}
+                      </div>
+
+                      {(() => {
+                        const durations = title.duration.split("-");
+                        return (
+                          <div>
+                            <span
+                              onClick={() =>
+                                navigator.clipboard.writeText(
+                                  getDateMMYYYY(durations[0]),
+                                )
+                              }
+                            >
+                              {durations[0]}
+                            </span>
+                            <span> - </span>
+                            <span
+                              onClick={() =>
+                                navigator.clipboard.writeText(
+                                  getDateMMYYYY(durations[1]),
+                                )
+                              }
+                            >
+                              {durations[1]}
+                            </span>
+                          </div>
+                        );
+                      })()}
+                    </TitleHead>
+                    <div
+                      onClick={() =>
+                        navigator.clipboard.writeText(
+                          title.taskList
+                            .map(
+                              (task, task_idx) => `${task_idx + 1}. ${task}\n`,
+                            )
+                            .join(""),
+                        )
+                      }
+                    >
+                      {title.taskList.map((task, task_idx) => (
+                        <TaskDetailContainer key={task_idx}>
+                          <ParaDot>
+                            <span></span>
+                          </ParaDot>
+                          <TextDetails>
+                            <PlainText text={task} />
+                          </TextDetails>
+                        </TaskDetailContainer>
+                      ))}
+                    </div>
+                  </TitleContainer>
+                ))}
+            </ProjectItem>
+          );
+        })}
     </ProjectsContainer>
   );
 };
