@@ -5,7 +5,7 @@ export const experienceInfo: Experiences = {
     {
       hidden: false,
       company: "ByteDance / TikTok",
-      companyComment: "Relational Database Infrastructure Team",
+      companyComment: "Relational Database(RDS) Infrastructure Team",
       address: "San Jose, California",
       titles: [
         {
