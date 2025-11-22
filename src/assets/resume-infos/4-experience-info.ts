@@ -29,7 +29,8 @@ export const experienceInfo: Experiences = {
       // Nexus Point Group Corp (formerly Cascadia Capital Corp) serves as an affiliated technology support provider for Bacera Co. Pty Ltd.
       // company: "Bacera Co. Pty Ltd",
       company: "Bacera",
-      companyComment: "",
+      companyComment:
+        "Forex Trading Platform Dev Team, via Nexus Point Group Corp and Cascadia Capital Corp",
       address: "Los Angeles, California",
       titles: [
         {
@@ -63,6 +64,7 @@ export const experienceInfo: Experiences = {
       hidden: false,
       company: "Meituan",
       // companyComment: "Beijing Sankuai Online Technology Co., Ltd",
+      companyComment: "Multi-Media Infrastructure Team",
       address: "Beijing, China",
       titles: [
         {
