@@ -1,7 +1,6 @@
-import { FC } from 'react';
-import styled from 'styled-components';
-import { experienceInfo } from '../assets/resume-infos/4-experience-info';
-import pageConfig from '../assets/resume-infos/0-page-setting';
+import { FC } from "react";
+import styled from "styled-components";
+import pageConfig from "../assets/resume-infos/0-page-setting";
 
 type Props = {
   text: string;
